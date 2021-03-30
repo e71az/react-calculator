@@ -1,13 +1,15 @@
 import '../style.css';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
+import Button from './Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <>
-      <h1> Hello World</h1>
       <Display />
       <ButtonPanel />
+      <Button />
     </>
   );
 }
