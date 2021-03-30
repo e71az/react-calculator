@@ -2,3 +2,10 @@
   height: 100vh;
   background-color: black;
 }
+
+.calc {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  border: 1px solid red;
+}

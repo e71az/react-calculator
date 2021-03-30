@@ -1,7 +1,7 @@
 import { PropTypes } from 'prop-types';
 import Button from 'react-bootstrap/Button';
 
-function renderButton({ name = 'button2', color = 'light' }) {
+function renderButton({ name = '2', color = 'light' }) {
   return <Button className={`btn btn-${color}`}>{name}</Button>;
 }
 
