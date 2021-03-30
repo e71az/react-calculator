@@ -1,7 +1,3 @@
-// import './style.css';
-
-// function App() {
-//   return <h1>Hello World</h1>;
-// }
+// import App from './components/App';
 
 // export default App;
