@@ -1,7 +1,7 @@
 import { PropTypes } from 'prop-types';
 
 function Display({ result = '0' }) {
-  return <h1>{result}</h1>;
+  return <h1 className="result-box">{result}</h1>;
 }
 
 Display.propTypes = {

@@ -2,7 +2,7 @@ import { PropTypes } from 'prop-types';
 import Button from 'react-bootstrap/Button';
 
 function renderButton({ name = '2', color = 'light' }) {
-  return <Button className={`btn btn-${color}`}>{name}</Button>;
+  return <Button className={`btn btn-${color} rounded-0`}>{name}</Button>;
 }
 
 renderButton.propTypes = {
