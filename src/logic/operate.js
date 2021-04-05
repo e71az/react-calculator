@@ -1,8 +1,6 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  console.log(numberOne, numberTwo, operation);
-
   if (operation === null) {
     return 1;
   }
@@ -35,8 +33,6 @@ const operate = (numberOne, numberTwo, operation) => {
     default:
       return 'Cannot solve the operation';
   }
-
-  console.log(result.toString());
   return result.toString();
 };
 

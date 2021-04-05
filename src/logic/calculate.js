@@ -3,8 +3,6 @@ import operate from './operate';
 const calculate = (dataObject, btnName) => {
   let { total, next, operation } = dataObject;
 
-  console.log(dataObject, btnName);
-
   const check = () => {
     if (next && operation) {
       total = operate(total, next, operation);
@@ -39,7 +37,6 @@ const calculate = (dataObject, btnName) => {
       break;
     case '+':
       check();
-      console.log(`TOTAL: ${total}`);
       next = '';
       operation = '+';
       break;
