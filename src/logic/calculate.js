@@ -26,7 +26,9 @@ const calculate = (dataObject, btnName) => {
       }
       break;
     case '%':
-      total = operate(total, next, operation);
+      check();
+
+      // total = operate(total, next, operation);
       next = null;
       operation = '%';
       break;
@@ -47,15 +49,24 @@ const calculate = (dataObject, btnName) => {
       break;
     case 'X':
       check();
-      total = operate(total, next, operation);
-      next = '0';
+      // total = operate(total, next, operation);
+      next = '';
       operation = 'X';
       break;
     case '÷':
       check();
-      total = operate(total, next, operation);
+      // total = operate(total, next, operation);
       next = '';
       operation = '÷';
+      break;
+    case '.':
+      if (total.includes('.') && next.includes('.')) {
+        break;
+      } else if (total.includes('.')) {
+        next += '.';
+      } else {
+        total += '.';
+      }
       break;
 
     default:
