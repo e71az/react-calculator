@@ -21,14 +21,14 @@ const calculate = (dataObject, btnName) => {
     case '+/-':
       if (next) {
         next *= -1;
+        next = next.toString();
       } else {
         total *= -1;
+        total = total.toString();
       }
       break;
     case '%':
       check();
-
-      // total = operate(total, next, operation);
       next = null;
       operation = '%';
       break;
@@ -40,22 +40,21 @@ const calculate = (dataObject, btnName) => {
     case '+':
       check();
       console.log(`TOTAL: ${total}`);
-      // next = '0';
+      next = '';
       operation = '+';
       break;
     case '-':
       check();
+      next = '';
       operation = '-';
       break;
     case 'X':
       check();
-      // total = operate(total, next, operation);
       next = '';
       operation = 'X';
       break;
     case '÷':
       check();
-      // total = operate(total, next, operation);
       next = '';
       operation = '÷';
       break;
