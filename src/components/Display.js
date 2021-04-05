@@ -1,9 +1,16 @@
 import { PropTypes } from 'prop-types';
 
-const Display = ({ result = '0' }) => <h1 className="result-box">{result}</h1>;
+const Display = (props) => {
+  const { total } = props;
+  return <h1 className="result-box">{total}</h1>;
+};
+
+Display.defaultProps = {
+  total: '0',
+};
 
 Display.propTypes = {
-  result: PropTypes.string.isRequired,
+  total: PropTypes.string,
 };
 
 export default Display;

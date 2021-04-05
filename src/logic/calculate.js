@@ -3,6 +3,15 @@ import operate from './operate';
 const calculate = (dataObject, btnName) => {
   let { total, next, operation } = dataObject;
 
+  console.log(dataObject, btnName);
+
+  const check = () => {
+    if (next && operation) {
+      total = operate(total, next, operation);
+      next = null;
+    }
+  };
+
   switch (btnName) {
     case 'AC':
       total = null;
@@ -23,33 +32,38 @@ const calculate = (dataObject, btnName) => {
       break;
     case '=':
       total = operate(total, next, operation);
-      operation = '=';
+      operation = null;
+      next = null;
       break;
     case '+':
-      total = operate(total, next, operation);
-      next = '0';
+      check();
+      console.log(`TOTAL: ${total}`);
+      // next = '0';
       operation = '+';
       break;
     case '-':
-      total = operate(total, next, operation);
-      next = '0';
+      check();
       operation = '-';
       break;
     case 'X':
+      check();
       total = operate(total, next, operation);
       next = '0';
       operation = 'X';
       break;
     case '÷':
+      check();
       total = operate(total, next, operation);
       next = '';
       operation = '÷';
       break;
 
     default:
-      total = 'Operation not possible';
-      next = null;
-      operation = null;
+      if (operation === null && next === null) {
+        total = total === null ? btnName : total + btnName;
+      } else if (total && operation) {
+        next = next === null ? btnName : next + btnName;
+      }
       break;
   }
 
