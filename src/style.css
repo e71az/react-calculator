@@ -1,0 +1,18 @@
+#root {
+  height: 100vh;
+  background-color: black;
+}
+
+.calc {
+  margin: 0 auto;
+  text-align: center;
+  width: 20%;
+  height: 45%;
+  border: 1px solid red;
+}
+
+.result-box {
+  color: white;
+  text-align: right;
+  margin-right: 20%;
+}
