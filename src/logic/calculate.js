@@ -3,6 +3,13 @@ import operate from './operate';
 const calculate = (dataObject, btnName) => {
   let { total, next, operation } = dataObject;
 
+  const check = () => {
+    if (next && operation) {
+      total = operate(total, next, operation);
+      next = null;
+    }
+  };
+
   switch (btnName) {
     case 'AC':
       total = null;
@@ -12,44 +19,58 @@ const calculate = (dataObject, btnName) => {
     case '+/-':
       if (next) {
         next *= -1;
+        next = next.toString();
       } else {
         total *= -1;
+        total = total.toString();
       }
       break;
     case '%':
-      total = operate(total, next, operation);
+      check();
       next = null;
       operation = '%';
       break;
     case '=':
       total = operate(total, next, operation);
-      operation = '=';
+      operation = null;
+      next = null;
       break;
     case '+':
-      total = operate(total, next, operation);
-      next = '0';
+      check();
+      next = '';
       operation = '+';
       break;
     case '-':
-      total = operate(total, next, operation);
-      next = '0';
+      check();
+      next = '';
       operation = '-';
       break;
     case 'X':
-      total = operate(total, next, operation);
-      next = '0';
+      check();
+      next = '';
       operation = 'X';
       break;
     case '÷':
-      total = operate(total, next, operation);
+      check();
       next = '';
       operation = '÷';
       break;
+    case '.':
+      if (total.includes('.') && next.includes('.')) {
+        break;
+      } else if (total.includes('.')) {
+        next += '.';
+      } else {
+        total += '.';
+      }
+      break;
 
     default:
-      total = 'Operation not possible';
-      next = null;
-      operation = null;
+      if (operation === null && next === null) {
+        total = total === null ? btnName : total + btnName;
+      } else if (total && operation) {
+        next = next === null ? btnName : next + btnName;
+      }
       break;
   }
 
