@@ -6,7 +6,6 @@
   text-align: center;
   width: 700px;
   /* height: 60%; */
-  border: 1px solid red;
 }
 
 .result-box {
@@ -25,15 +24,20 @@
 }
 
 .button-panel button {
+  color: black;
+
   height: 100px;
   border: 1px solid lightgrey;
 }
+.button-panel button:hover {
+  color: black;
+}
 
 .calc-btn {
-  width: 25%;
+  /* width: 25%; */
 }
 
 .btn-0 {
-  width: 50%;
-  background-color: orange !important;
+  /* width: 50%; */
+  /* background-color: orange !important; */
 }
