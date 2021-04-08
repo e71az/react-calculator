@@ -1,5 +1,4 @@
 import { PropTypes } from 'prop-types';
-// import Button from 'react-bootstrap/Button';
 import * as styles from '../style.module.css';
 
 const renderButton = (props) => {
@@ -20,11 +19,6 @@ const renderButton = (props) => {
       {name}
     </button>
   );
-};
-
-renderButton.defaultProps = {
-  // name: 'btn',
-  // color: 'orange',
 };
 
 renderButton.propTypes = {
