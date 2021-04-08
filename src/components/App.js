@@ -23,10 +23,8 @@ const App = () => {
 
   return (
     <div className="calc">
-      <div>
-        <Display total={next || total || '0'} />
-        <ButtonPanel handleClick={handleClick} />
-      </div>
+      <Display total={next || total || '0'} />
+      <ButtonPanel handleClick={handleClick} />
     </div>
   );
 };

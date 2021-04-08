@@ -2,7 +2,7 @@ import { PropTypes } from 'prop-types';
 
 const Display = (props) => {
   const { total } = props;
-  return <h1 className="result-box">{total}</h1>;
+  return <h1 className="result-box text-truncate text-right">{total}</h1>;
 };
 
 Display.defaultProps = {

@@ -2,11 +2,13 @@ import { PropTypes } from 'prop-types';
 import Button from 'react-bootstrap/Button';
 
 const renderButton = (props) => {
-  const { name, clickHandler, color } = props;
+  const {
+    name, clickHandler, color, className,
+  } = props;
 
   return (
     <Button
-      className={`btn btn-${color} rounded-0 calc-btn`}
+      className={`btn-${color} ${className} rounded-0 calc-btn`}
       onClick={() => {
         clickHandler(name);
       }}
@@ -17,7 +19,7 @@ const renderButton = (props) => {
 };
 
 renderButton.defaultProps = {
-  name: 'btn',
+  // name: 'btn',
   color: 'light',
 };
 
