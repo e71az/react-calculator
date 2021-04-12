@@ -22,9 +22,14 @@ const App = () => {
   const { total, next } = allValues;
 
   return (
-    <div className="calc">
-      <Display total={next || total || '0'} />
-      <ButtonPanel handleClick={handleClick} />
+    <div className="calc-container d-flex justify-content-between ml-5 mt-5">
+      <div className="">
+        <h1>Lets do some math!</h1>
+      </div>
+      <div className="calc mt-5 mr-5">
+        <Display total={next || total || '0'} />
+        <ButtonPanel handleClick={handleClick} />
+      </div>
     </div>
   );
 };

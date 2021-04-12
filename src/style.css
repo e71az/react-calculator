@@ -1,6 +1,7 @@
-.calc {
+.calc-container {
+  /* display: flex; */
   text-align: center;
-  width: 700px;
+  /* min-width: 700px; */
 }
 
 .result-box {
@@ -59,4 +60,8 @@
 
 .home-container {
   width: 70vw;
+}
+
+.calc {
+  width: 700px;
 }
