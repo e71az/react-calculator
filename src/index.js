@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+import Routes from './Routes';
+import MainNavbar from './components/NavBar';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MainNavbar />
+    <Routes />
   </React.StrictMode>,
   document.getElementById('root'),
 );
