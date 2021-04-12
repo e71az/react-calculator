@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Renders Home component Should render the navbar and home components correctly  1`] = `
+exports[`Renders App component Should render the navbar and app components correctly  1`] = `
 Array [
   <nav
     className="navbar navbar-expand-lg navbar-dark bg-dark"
