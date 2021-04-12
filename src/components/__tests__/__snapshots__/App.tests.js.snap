@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Home component Should render the navbar and home components correctly  1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand-lg navbar-dark bg-dark"
+  >
+    <a
+      className="navbar-brand"
+      href="#home"
+    >
+      Math Magicians
+    </a>
+    <button
+      aria-controls="responsive-navbar-nav"
+      aria-label="Toggle navigation"
+      className="navbar-toggler collapsed"
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      aria-expanded={null}
+      className="navbar-collapse collapse"
+      id="responsive-navbar-nav"
+    >
+      <div
+        className="ml-auto navbar-nav"
+        onKeyDown={[Function]}
+      >
+        <a
+          className="nav-link"
+          data-rb-event-key="/"
+          href="/"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+        >
+          Home
+        </a>
+        <a
+          className="nav-link"
+          data-rb-event-key="/calc"
+          href="/calc"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+        >
+          Calculator
+        </a>
+        <a
+          className="nav-link"
+          data-rb-event-key="/quote"
+          href="/quote"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+        >
+          Quote
+        </a>
+      </div>
+    </div>
+  </nav>,
+  <div
+    className="calc-container d-flex justify-content-between ml-5 mt-5"
+  >
+    <div
+      className=""
+    >
+      <h1>
+        Lets do some math!
+      </h1>
+    </div>
+    <div
+      className="calc mt-5 mr-5"
+    >
+      <h1
+        className="result-box text-truncate text-right"
+      >
+        0
+      </h1>
+      <div
+        className="button-panel"
+      >
+        <div
+          className="group-1"
+        >
+          <button
+            className="undefined rounded-0 calc-btn undefined undefined"
+            onClick={[Function]}
+            type="button"
+          >
+            AC
+          </button>
+          <button
+            className="undefined rounded-0 calc-btn undefined undefined"
+            onClick={[Function]}
+            type="button"
+          >
+            +/-
+          </button>
+          <button
+            className="undefined rounded-0 calc-btn undefined undefined"
+            onClick={[Function]}
+            type="button"
+          >
+            %
+          </button>
+          <button
+            className="undefined rounded-0 calc-btn undefined undefined"
+            onClick={[Function]}
+            type="button"
+          >
+            ÷
+          </button>
+        </div>
+        <div
+          className="group-2"
+        >
+          <button
+            className="undefined rounded-0 calc-btn undefined undefined"
+            onClick={[Function]}
+            type="button"
+          >
+            7
+          </button>
+          <button
+            className="undefined rounded-0 calc-btn undefined undefined"
+            onClick={[Function]}
+            type="button"
+          >
+            8
+          </button>
+          <button
+            className="undefined rounded-0 calc-btn undefined undefined"
+            onClick={[Function]}
+            type="button"
+          >
+            9
+          </button>
+          <button
+            className="undefined rounded-0 calc-btn undefined undefined"
+            onClick={[Function]}
+            type="button"
+          >
+            X
+          </button>
+        </div>
+        <div
+          className="group-3"
+        >
+          <button
+            className="undefined rounded-0 calc-btn undefined undefined"
+            onClick={[Function]}
+            type="button"
+          >
+            4
+          </button>
+          <button
+            className="undefined rounded-0 calc-btn undefined undefined"
+            onClick={[Function]}
+            type="button"
+          >
+            5
+          </button>
+          <button
+            className="undefined rounded-0 calc-btn undefined undefined"
+            onClick={[Function]}
+            type="button"
+          >
+            6
+          </button>
+          <button
+            className="undefined rounded-0 calc-btn undefined undefined"
+            onClick={[Function]}
+            type="button"
+          >
+            -
+          </button>
+        </div>
+        <div
+          className="group-4"
+        >
+          <button
+            className="undefined rounded-0 calc-btn undefined undefined"
+            onClick={[Function]}
+            type="button"
+          >
+            1
+          </button>
+          <button
+            className="undefined rounded-0 calc-btn undefined undefined"
+            onClick={[Function]}
+            type="button"
+          >
+            2
+          </button>
+          <button
+            className="undefined rounded-0 calc-btn undefined undefined"
+            onClick={[Function]}
+            type="button"
+          >
+            3
+          </button>
+          <button
+            className="undefined rounded-0 calc-btn undefined undefined"
+            onClick={[Function]}
+            type="button"
+          >
+            +
+          </button>
+        </div>
+        <div
+          className="group-5"
+        >
+          <button
+            className="btn-0 rounded-0 calc-btn undefined undefined"
+            onClick={[Function]}
+            type="button"
+          >
+            0
+          </button>
+          <button
+            className="undefined rounded-0 calc-btn undefined undefined"
+            onClick={[Function]}
+            type="button"
+          >
+            .
+          </button>
+          <button
+            className="undefined rounded-0 calc-btn undefined undefined"
+            onClick={[Function]}
+            type="button"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
