@@ -20,7 +20,12 @@ To get this project up and running locally, you must have node installed on your
 ## Setup
 
 - Clone this repository with: "git clone git@github.com:e71az/react-calculator.git" using your terminal or command line.
+- Run 'npm install'
 - Input 'npm start' in your terminal and navigate to http://localhost:3000/
+
+## Testing
+
+- Run 'npm test' and press 'a' to run all tests.
 
 ### Prerequisites
 
