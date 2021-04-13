@@ -2,7 +2,7 @@ import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
   if (operation === null) {
-    return 1;
+    return 0;
   }
   const num1 = numberOne !== null ? Big(numberOne) : Big('0');
   const num2 = numberTwo !== null ? Big(numberTwo) : Big('0');
@@ -26,7 +26,7 @@ const operate = (numberOne, numberTwo, operation) => {
       if (num1 == null) {
         result = num2.div(100);
       } else {
-        result = num2.div(100).times(num1);
+        result = num2.div(100).times(num1).plus(num1);
       }
       break;
 

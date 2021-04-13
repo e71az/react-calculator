@@ -1,40 +1,37 @@
 import '../style.css';
-import React from 'react';
+import React, { useState } from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // eslint-disable-next-line no-unused-vars
 import calculate from '../logic/calculate';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
+const App = () => {
+  const [allValues, setAllValues] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
-  handleClick = (buttonName) => {
-    const result = calculate(this.state, buttonName);
+  const handleClick = (buttonName) => {
+    const result = calculate(allValues, buttonName);
 
-    this.setState(result);
+    setAllValues(result);
   };
 
-  render() {
-    const { total, next } = this.state;
+  const { total, next } = allValues;
 
-    return (
-      <div className="calc">
-        <>
-          <Display total={next || total || '0'} />
-          <ButtonPanel handleClick={this.handleClick} />
-        </>
+  return (
+    <div className="calc-container d-flex justify-content-between ml-5 mt-5">
+      <div className="">
+        <h1>Lets do some math!</h1>
       </div>
-    );
-  }
-}
+      <div className="calc mt-5 mr-5">
+        <Display total={next || total || '0'} />
+        <ButtonPanel handleClick={handleClick} />
+      </div>
+    </div>
+  );
+};
 
 export default App;

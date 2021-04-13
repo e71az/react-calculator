@@ -1,0 +1,15 @@
+.btnWhite {
+  background-color: white;
+}
+
+.btnOrange {
+  background-color: orange;
+}
+
+.btnWide {
+  width: 50%;
+}
+
+.btnNotWide {
+  width: 25%;
+}
